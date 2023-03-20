@@ -28,7 +28,7 @@
               class="absolute right-4 block lg:hidden"
             >
               <span
-                class="humberger-line origin-top-left transition duration-300"
+                class="humberger-line origin-top-left transition duration-300 "
               ></span>
               <span class="humberger-line transition duration-300"></span>
               <span
@@ -38,43 +38,59 @@
 
             <nav
               id="nav-menu"
-              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none dark:bg-dark dark:shadow-slate-500 lg:dark:bg-transparent" 
             >
               <ul class="block lg:flex">
                 <li class="group">
                   <a
                     href="#home"
-                    class="text-bold mx-8 flex py-2 font-bold text-dark hover:text-crimson"
+                    class="text-bold mx-8 flex py-2 font-bold text-dark group-hover:text-crimson dark:text-white"
                     >Beranda</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#about"
-                    class="mx-8 flex py-2 text-base font-bold text-dark hover:text-crimson"
+                    class="mx-8 flex py-2 text-base font-bold text-dark group-hover:text-crimson dark:text-white"
                     >Tentang Saya</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#portofolio"
-                    class="mx-8 flex py-2 text-base font-bold text-dark hover:text-crimson"
+                    class="mx-8 flex py-2 text-base font-bold text-dark group-hover:text-crimson dark:text-white"
                     >Portofolio</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#tech"
-                    class="mx-8 flex py-2 text-base font-bold text-dark hover:text-crimson"
+                    class="mx-8 flex py-2 text-base font-bold text-dark group-hover:text-crimson dark:text-white"
                     >Tech</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#contact"
-                    class="mx-8 flex py-2 text-base font-bold text-dark hover:text-crimson"
+                    class="mx-8 flex py-2 text-base font-bold text-dark group-hover:text-crimson dark:text-white"
                     >Contact</a
                   >
+                </li>
+                <li class="flex items-center pl-8 mt-3 lg:mt-0">
+                  <div class="flex ">
+                    <span class="mr-2 text-sm text-dark font-semibold dark:text-white">Light</span>
+                    <input type="checkbox" id="dark-toggle" class="hidden" />
+                    <label for="dark-toggle">
+                      <div
+                        class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1"
+                      >
+                        <div
+                          class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-400 ease-in-out"
+                        ></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-sm text-dark font-semibold dark:text-white">Dark</span>
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -85,14 +101,14 @@
     <!--Header End-->
 
     <!--Hero Section Start-->
-    <section id="home" class="pt-36" data-aos="fade-up">
+    <section id="home" class="pt-36 dark:bg-dark" data-aos="fade-up">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
             <h1 class="text-base font-semibold text-crimson md:text-xl">
               Halo semua👋,Saya
               <span
-                class="mt-1 block text-3xl font-bold text-slate-900 lg:text-5xl"
+                class="mt-1 block text-3xl font-bold text-slate-900 lg:text-5xl dark:text-white"
                 >Aditya Imam Zuhdi</span
               >
             </h1>
@@ -116,10 +132,10 @@
               <img
                 src="dist/img/aditya.png"
                 alt="Aditya Imam Z"
-                class="mx-auto max-w-full"
+                class="mx-auto max-w-full relative z-10"
               />
               <span
-                class="absolute -bottom-1/4 left-1/2 -z-10 -translate-x-1/2"
+                class="absolute -bottom-1/4 left-1/2  -translate-x-1/2"
               >
                 <svg
                   width="560"
@@ -142,23 +158,23 @@
     <!--hero Penutup-->
 
     <!--About Section Start-->
-    <section id="about" class="pt-36 pb-32">
+    <section id="about" class="pt-36 pb-32 dark:bg-dark">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="mb-10 w-full px-4 lg:w-1/2">
             <h4 class="mb-3 text-lg font-bold uppercase text-crimson">
               Tentang Saya
             </h4>
-            <h2 class="mb-5 max-w-md text-3xl font-bold text-dark lg:text-4xl">
+            <h2 class="mb-5 max-w-md text-3xl font-bold text-dark lg:text-4xl dark:text-white">
               Lorem, ipsum dolor .
             </h2>
-            <p class="max-w-xl text-base font-medium text-secondary">
+            <p class="max-w-xl text-base font-medium text-secondary ">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             </p>
           </div>
           <div class="w-full px-4 lg:w-1/2">
             <h3
-              class="mb-4 text-2xl font-semibold text-dark lg:pt-10 lg:text-3xl"
+              class="mb-4 text-2xl font-semibold text-dark lg:pt-10 lg:text-3xl dark:text-white"
             >
               Lets Connect
             </h3>
@@ -250,12 +266,12 @@
     <!--About Section End-->
 
     <!--Portofolio Section Start-->
-    <section id="portofolio" class="bg-slate-200 pt-36 pb-16">
+    <section id="portofolio" class="bg-slate-200 pt-36 pb-16 dark:bg-slate-700">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center">
-            <h4 class="mb=2 text-xl font-semibold text-crimson">Portofolio</h4>
-            <h2 class="mb-4 text-3xl font-bold text-dark">Project Terbaru</h2>
+            <h4 class="mb=2 text-xl font-semibold text-crimson ">Portofolio</h4>
+            <h2 class="mb-4 text-3xl font-bold text-dark dark:text-whit">Project Terbaru</h2>
             <p class="text-md font-medium text-secondary">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Exercitationem inventore vero, enim ullam nisi natus sint
@@ -270,7 +286,7 @@
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="dist/img/1.png" alt="Sistem Keuangan" width="w-full" />
             </div>
-            <h3 class="mx-auto mt-5 mb-5 text-xl font-semibold text-dark">
+            <h3 class="mx-auto mt-5 mb-5 text-xl font-semibold text-dark dark:text-white">
               Sistem Informasi Keuangan Solo Technopark
             </h3>
             <p class="text-base font-medium text-secondary">
@@ -283,7 +299,7 @@
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="dist/img/2.jpeg" alt="Sistem Keuangan" width="w-full" />
             </div>
-            <h3 class="mx-auto mt-5 mb-5 text-xl font-semibold text-dark">
+            <h3 class="mx-auto mt-5 mb-5 text-xl font-semibold text-dark dark:text-white">
               Website Parenting Momong
             </h3>
             <p class="text-base font-medium text-secondary">
@@ -296,7 +312,7 @@
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="dist/img/1.png" alt="Sistem Parenting" width="w-full" />
             </div>
-            <h3 class="mx-auto mt-5 mb-5 text-xl font-semibold text-dark">
+            <h3 class="mx-auto mt-5 mb-5 text-xl font-semibold text-dark dark:text-white">
               Sistem Informasi Keuangan Solo Technopark
             </h3>
             <p class="text-base font-medium text-secondary">
@@ -309,7 +325,7 @@
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="dist/img/1.png" alt="Sistem Keuangan" width="w-full" />
             </div>
-            <h3 class="mx-auto mt-5 mb-5 text-xl font-semibold text-dark">
+            <h3 class="mx-auto mt-5 mb-5 text-xl font-semibold text-dark dark:text-white">
               Sistem Informasi Keuangan Solo Technopark
             </h3>
             <p class="text-base font-medium text-secondary">
@@ -665,8 +681,10 @@
     <!--Back to top-->
     <a
       href="#home"
-      class="fixed bottom-4 right-4 z-[9999] h-12 w-12 rounded-full bg-crimson text-white flex justify-center text-center pt-2 font-bold hover:animate-pulse" id="top"
-    >↑</a>
+      class="fixed bottom-4 right-4 z-[9999] flex h-12 w-12 justify-center rounded-full bg-crimson pt-2 text-center font-bold text-white hover:animate-pulse"
+      id="top"
+      >↑</a
+    >
 
     <script src="dist/js/script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
